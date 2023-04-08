@@ -1,0 +1,220 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #f2f2f2;
+    margin: 0 1em;
+    font-family:"poiret one", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    color:antiquewhite;    
+    font-size: 1.5em;
+    color: #262626;
+}
+
+/* - - - MOBILE/MAIN STYLE - - - */
+
+header {
+    text-align: center;
+    background-color: 
+    #83677B;
+    text-transform: lowercase;
+    display: flex;
+    flex-direction: column;
+    padding-bottom:1em;
+}
+
+header h1 {
+    color:#501B1D;
+}
+
+header div {
+    padding: 0 1em;
+    text-transform: none;
+}
+
+ul {
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top:0px;
+    margin-bottom: 2px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    text-transform: lowercase; 
+    padding: 10px;
+    font-family: 'Alike', serif;
+    font-family: 'EB Garamond', serif;     
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Alike', serif;
+    font-family: 'EB Garamond', serif;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap:10px;
+    padding: 10px 10px;
+    min-width: 400px;
+    height: 295px;
+    overflow-x: scroll;
+}
+
+img {
+    width: 300px;
+    height:200px;
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
+    background-color:#ADADAD;
+    
+}
+
+footer a {
+    color:#262626;
+    font-weight: bold;
+}
+
+/* - - - ABOUT PAGE - - -  */
+
+article  {
+    display: flex;
+    flex-direction: column;
+}
+
+article p {
+    padding: 1em;
+}
+
+article img {
+    max-width:200px;
+    border-radius: 50%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 1em;
+    align-self: center;
+}
+
+article p {
+    padding: 20px;
+    margin-left:2em;
+}
+
+/* - - - FAQ PAGE - - -  */
+
+#faq {
+    color:#0d0d0d;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left:1em;
+    padding: 0 2em;
+}
+
+/* - - - SCROLLBAR STYLE - - - */
+
+::-webkit-scrollbar {
+    width: .5em;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/* - - - MEDIA QUERIES - - - */
+
+@media (min-width: 767px) {                  
+    
+    header p {
+       display: none;
+    }
+    
+    article {
+        width:85%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+     .gallery img:hover {
+        transform:scale(2);
+        border: .5em solid #f2f2f2;
+        position: absolute; 
+        top: 25%; left: 50%;
+    }
+}
+
+ @media (min-width: 1200px) {
+
+    .desktop {
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    header {
+        width:25%;
+        height:85vh;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    header p {
+        padding: 0 2em;
+    }
+
+    .gallery {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        width:75%;
+        height:85vh;
+        overflow-y: scroll;
+        overflow-x:hidden;   
+    }
+
+    #faq {
+        width:85%;
+        height:85vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding: 0 4em;
+    }
+ }
