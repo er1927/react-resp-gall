@@ -60,20 +60,14 @@ a:hover {
     font-weight: bold;
 }
 
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
 p {
     font-family: 'Alike', serif;
     font-family: 'EB Garamond', serif;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap:10px;
-    padding: 10px 10px;
-    min-width: 400px;
-    height: 295px;
-    overflow-x: scroll;
 }
 
 img {

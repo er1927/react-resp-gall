@@ -7,8 +7,8 @@ export default function Header() {
                 <h1>Elizabeth Roberts Photographer</h1>
                 <nav> 
                     <ul>
-                        <li><a href="../responsive-gallery/about/index.html"> About</a></li>
-                        <li><a href="../responsive-gallery/faq/index.html">FAQ</a></li>
+                        <li><a href=""> About</a></li>
+                        <li><a href="">FAQ</a></li>
                     </ul>
                 </nav>
                     <div>
